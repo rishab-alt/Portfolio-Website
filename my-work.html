@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About Me</title>
+  </head>
+
+  <body
+  class="m-0 p-0 h-full bg-[#29ab87]"
+    id="body_page"
+  >
+    <nav
+      id="nav"
+      class="bg-white shadow-lg"
+    >
+      <div class="mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex align-center">
+            <a
+              href=""
+              class="py-4 px-2 font-semibold"
+            >
+              Rishab
+            </a>
+          </div>
+          <div class="flex space-x-7">
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                href="./index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+              >
+                Home
+              </a>
+              <a
+                href="./about.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+              >
+                About
+              </a>
+              <a
+                href="./my-work.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+              >
+                My Work
+              </a>
+              <a
+                href="./contact.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-gray-500 hover:text-green-500"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li class="active">
+            <a
+              href="./index.html"
+              class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="./my-work.html"
+              class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300"
+            >
+              My Work
+            </a>
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300"
+            >
+              Contact Me
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+   
+    <section class="container m-auto">
+      <section class="flex flex-col justify-center items-center p-6 h-full gap-10">
+        <h1 class="text-3xl text-white text-center sm:text-[55px] md:text-[70px] mt-12 border-white underline">My Work</h1>
+
+        <section class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:p-6 h-full gap-10 mt-6 md:mt-12">
+          
+          <div class="relative flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-emerald-700">
+            <div class="absolute top-0 right-0 p-8">
+              <a class="text-lg font-bold text-purple-blue-500" target="_blank" href="https://github.com/rishab-alt/Super-calc-visual-basics">
+                <img src="./images/github.svg" alt="Super Calculator" class="transition-all w-12 h-12 ease-in hover:w-14 hover:h-14">
+              </a>
+            </div>
+            <img src="./images/project-svgrepo-com.svg" alt="Project Icon" class="w-32 h-32">
+            <p class="text-2xl font-extrabold text-dark-grey-900">Super Calculator</p>
+            <p class="text-base text-center leading-7 text-dark-grey-600">This is a caulator made in visual basics, used to add,subtract ,multiply and divide numbers</p>
+          </div>
+
+          <div class="relative flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-emerald-700">
+            <div class="absolute top-0 right-0 p-8">
+              <a class="text-lg font-bold text-purple-blue-500" target="_blank" href="https://github.com/rishab-alt/Picture-viewer">
+                <img src="./images/github.svg" alt="Super Calculator Github" class="transition-all w-12 h-12 ease-in hover:w-14 hover:h-14">
+              </a>
+            </div>
+            <img src="./images/project-svgrepo-com.svg" alt="Project Icon" class="w-32 h-32">
+            <p class="text-2xl font-extrabold text-dark-grey-900">Picture Viewer</p>
+            <p class="text-base text-center leading-7 text-dark-grey-600 line-clamp-3">This is a picture viewer made with visual basics , you can add an image which can be ony .JPG image files , allows you to stretch the image</p>
+          </div>
+
+          <div class="relative flex flex-col justify-between items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-emerald-700">
+            <div class="absolute top-0 right-0 p-8">
+              <a class="text-lg font-bold text-purple-blue-500" target="_blank" href="https://github.com/rishab-alt/Text-Editor">
+                <img src="./images/github.svg" alt="Picture Viewer Gitgub" class="transition-all w-12 h-12 ease-in hover:w-14 hover:h-14">
+              </a>
+            </div>
+            <img src="./images/project-svgrepo-com.svg" alt="Project Icon" class="w-32 h-32">
+            <p class="text-2xl font-extrabold text-dark-grey-900">Text Editor</p>
+            <p class="text-base text-center leading-7 text-dark-grey-600">This is a text editor made with visual basics , allows you to do a range of things, from opening files to printing to saving files</p>
+          </div>
+
+          <div class="relative flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-emerald-700">
+            <div class="absolute top-0 right-0 p-8">
+              <a class="text-lg font-bold text-purple-blue-500" target="_blank" href="./College_project_files/Spreadsheet project_current_final 2.xlsm">
+                <img src="./images/download.svg" alt="Excel College Assignment Download" class="transition-all w-10 h-10 ease-in hover:w-12 hover:h-12">
+              </a>
+            </div>
+            <img src="./images/project-svgrepo-com.svg" alt="Project Icon" class="w-32 h-32">
+            <p class="text-2xl font-extrabold text-dark-grey-900">Excel College Assignment</p>
+            <p class="text-base text-center leading-7 text-dark-grey-600">This spreadsheet shows the work that I did for college and what skills I have</p>
+          </div>
+
+        </section>
+      </section>
+    </section>
+
+    <script
+      src="./js/mobileMenu.js"
+      async
+    ></script>
+  </body>
+</html>
