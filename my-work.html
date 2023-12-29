@@ -1,178 +1,297 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"/>
-    <link rel="icon" href="./images/Favicon.png" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>About Me</title>
-  </head>
 
-  <body
-  class="m-0 p-0 h-full bg-[#01a5d9]"
-    id="body_page"
-  >
-    <nav
-      id="nav"
-      class="bg-white shadow-lg"
-    >
-      <div class="mx-auto px-4">
-        <div class="flex justify-between">
-          <div class="flex align-center">
-            <a
-              href=""
-              class="py-4 px-2 font-semibold"
-            >
-              Rishab
-            </a>
-          </div>
-          <div class="flex space-x-7">
-            <div class="hidden md:flex items-center space-x-1">
-              <a
-                href="./index.html"
-                class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300"
-              >
-                Home
-              </a>
-              <a
-                href="./about.html"
-                class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300"
-              >
-                About
-              </a>
-              <a
-                href="./my-work.html"
-                class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300"
-              >
-                My Work
-              </a>
-              <a
-                href="./contact.html"
-                class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300"
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
-          <!-- Mobile menu button -->
-          <div class="md:hidden flex items-center">
-            <button class="outline-none mobile-menu-button">
-              <svg
-                class="w-6 h-6 text-gray-500 hover:text-[#89c5c7]"
-                x-show="!showMenu"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./images/Favicon.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>My Work</title>
+</head>
+
+<body class="m-0 p-0 h-full bg-[#01a5d9]" id="body_page">
+  <nav id="nav" class="bg-white shadow-lg">
+    <div class="mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex align-center">
+          <a href="" class="py-4 px-2 font-semibold">
+            Rishab
+          </a>
         </div>
-      </div>
-      <!-- mobile menu -->
-      <div class="hidden mobile-menu">
-        <ul class="">
-          <li class="active">
-            <a
-              href="./index.html"
-              class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300"
-            >
+        <div class="flex space-x-7">
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="./index.html"
+              class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
               Home
             </a>
-          </li>
-          <li>
-            <a
-              href="./about.html"
-              class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300"
-            >
+            <a href="./about.html"
+              class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
               About
             </a>
-          </li>
-          <li>
-            <a
-              href="./my-work.html"
-              class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300"
-            >
+            <a href="./my-work.html"
+              class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
               My Work
             </a>
-          </li>
-          <li>
-            <a
-              href="./contact.html"
-              class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300"
-            >
-              Contact Me
+            <a href="./contact.html"
+              class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
+              Contact Us
             </a>
-          </li>
-          
-        </ul>
+          </div>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-gray-500 hover:text-[#89c5c7]" x-show="!showMenu" fill="none"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
       </div>
-    </nav>
-   
-    <section class="container m-auto">
-      <section class="flex flex-col justify-center items-center p-6 h-full gap-10">
-        <h1 class="text-3xl text-white text-center sm:text-[55px] md:text-[70px] mt-12 border-white underline">My Work</h1>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active">
+          <a href="./index.html"
+            class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="./about.html"
+            class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="./my-work.html"
+            class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+            My Work
+          </a>
+        </li>
+        <li>
+          <a href="./contact.html"
+            class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+            Contact Me
+          </a>
+        </li>
 
-        <section class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:p-6 h-full gap-10 mt-6 md:mt-12">
-          
-          <div class="relative flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-[#89c5c7] ">
-            <div class="absolute top-0 right-0 p-8">
-              <a class="text-lg font-bold text-purple-blue-500" target="_blank" href="https://github.com/rishab-alt/Super-calc-visual-basics">
-                <img src="./images/github.svg" alt="Super Calculator" class="transition-all w-12 h-12 ease-in hover:w-14 hover:h-14">
-              </a>
-            </div>
-            <img src="./images/project-svgrepo-com.svg" alt="Project Icon" class="w-32 h-32">
-            <p class="text-2xl font-extrabold text-dark-grey-900">Super Calculator</p>
-            <p class="text-base text-center leading-7 text-dark-grey-600">This is a caulator made in visual basics, used to add,subtract ,multiply and divide numbers</p>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container m-auto">
+    <section class="flex flex-col justify-center items-center p-6 h-full gap-10">
+      <h1 class="text-3xl text-white text-center sm:text-[55px] md:text-[70px] mt-12 border-white underline">My Work
+      </h1>
+
+      <section class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:p-6 h-full gap-10 mt-6 md:mt-12">
+
+        <div
+          class="relative flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-[#89c5c7] ">
+          <div class="absolute top-0 right-0 p-8">
+            <a class="text-lg font-bold text-purple-blue-500" target="_blank"
+              href="https://github.com/rishab-alt/Super-calc-visual-basics">
+              <img src="./images/github.svg" alt="Super Calculator"
+                class="transition-all w-12 h-12 ease-in hover:w-14 hover:h-14">
+            </a>
           </div>
+          <svg width="150px" height="150px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M182.459627 15.900621h658.285715c12.720497 0 22.26087 10.335404 22.260869 22.26087v946.881987c0 12.720497-10.335404 22.26087-22.260869 22.26087H182.459627c-12.720497 0-22.26087-10.335404-22.260869-22.26087V38.161491C160.198758 26.236025 170.534161 15.900621 182.459627 15.900621z"
+              fill="#7D8792" />
+            <path
+              d="M841.540373 1024H182.459627c-21.465839 0-38.161491-17.490683-38.16149-38.161491V38.161491C144.298137 17.490683 161.78882 0 182.459627 0h658.285715c21.465839 0 38.161491 17.490683 38.16149 38.161491v946.881987c0.795031 21.465839-16.695652 38.956522-37.366459 38.956522zM182.459627 31.801242c-3.180124 0-6.360248 3.180124-6.360248 6.360249v946.881987c0 3.975155 3.180124 6.360248 6.360248 6.360249h658.285715c3.975155 0 6.360248-3.180124 6.360248-6.360249V38.161491c0-3.975155-3.180124-6.360248-6.360248-6.360249H182.459627z"
+              fill="" />
+            <path d="M254.012422 111.304348h512.795031v194.782609H254.012422z" fill="#BFEBFF" />
+            <path
+              d="M782.708075 321.987578H238.111801V95.403727h544.596274v226.583851z m-512.795032-31.801243h480.993789V127.204969H269.913043v162.981366z"
+              fill="" />
+            <path
+              d="M276.273292 401.490683h186.832298c12.720497 0 22.26087 10.335404 22.26087 22.26087v176.496894c0 12.720497-10.335404 22.26087-22.26087 22.26087H276.273292c-12.720497 0-22.26087-10.335404-22.26087-22.26087V423.751553c0-11.925466 9.540373-22.26087 22.26087-22.26087z"
+              fill="#BEC9D4" />
+            <path
+              d="M463.10559 638.409938H276.273292c-21.465839 0-38.161491-17.490683-38.161491-38.161491V423.751553c0-21.465839 17.490683-38.161491 38.161491-38.161491h186.832298c21.465839 0 38.161491 17.490683 38.161491 38.161491v176.496894c0 21.465839-16.695652 38.161491-38.161491 38.161491zM276.273292 417.391304c-3.975155 0-6.360248 3.180124-6.360249 6.360249v176.496894c0 3.975155 3.180124 6.360248 6.360249 6.360249h186.832298c3.975155 0 6.360248-3.180124 6.360249-6.360249V423.751553c0-3.975155-3.180124-6.360248-6.360249-6.360249H276.273292z"
+              fill="" />
+            <path
+              d="M561.689441 401.490683H748.521739c12.720497 0 22.26087 10.335404 22.26087 22.26087v176.496894c0 12.720497-10.335404 22.26087-22.26087 22.26087H561.689441c-12.720497 0-22.26087-10.335404-22.26087-22.26087V423.751553c0-11.925466 9.540373-22.26087 22.26087-22.26087z"
+              fill="#BEC9D4" />
+            <path
+              d="M748.521739 638.409938H561.689441c-21.465839 0-38.161491-17.490683-38.161491-38.161491V423.751553c0-21.465839 17.490683-38.161491 38.161491-38.161491H748.521739c21.465839 0 38.161491 17.490683 38.161491 38.161491v176.496894c0 21.465839-16.695652 38.161491-38.161491 38.161491zM561.689441 417.391304c-3.975155 0-6.360248 3.180124-6.360248 6.360249v176.496894c0 3.975155 3.180124 6.360248 6.360248 6.360249H748.521739c3.975155 0 6.360248-3.180124 6.360249-6.360249V423.751553c0-3.975155-3.180124-6.360248-6.360249-6.360249H561.689441z"
+              fill="" />
+            <path
+              d="M561.689441 686.111801H748.521739c12.720497 0 22.26087 10.335404 22.26087 22.26087v176.496894c0 12.720497-10.335404 22.26087-22.26087 22.26087H561.689441c-12.720497 0-22.26087-10.335404-22.26087-22.26087V708.372671c0-11.925466 9.540373-22.26087 22.26087-22.26087z"
+              fill="#BEC9D4" />
+            <path
+              d="M748.521739 923.031056H561.689441c-21.465839 0-38.161491-17.490683-38.161491-38.161491V708.372671c0-21.465839 17.490683-38.161491 38.161491-38.161491H748.521739c21.465839 0 38.161491 17.490683 38.161491 38.161491v176.496894c0 21.465839-16.695652 38.161491-38.161491 38.161491zM561.689441 702.012422c-3.975155 0-6.360248 3.180124-6.360248 6.360249v176.496894c0 3.975155 3.180124 6.360248 6.360248 6.360249H748.521739c3.975155 0 6.360248-3.180124 6.360249-6.360249V708.372671c0-3.975155-3.180124-6.360248-6.360249-6.360249H561.689441z"
+              fill="" />
+            <path
+              d="M276.273292 686.111801h186.832298c12.720497 0 22.26087 10.335404 22.26087 22.26087v176.496894c0 12.720497-10.335404 22.26087-22.26087 22.26087H276.273292c-12.720497 0-22.26087-10.335404-22.26087-22.26087V708.372671c0-11.925466 9.540373-22.26087 22.26087-22.26087z"
+              fill="#BEC9D4" />
+            <path
+              d="M463.10559 923.031056H276.273292c-21.465839 0-38.161491-17.490683-38.161491-38.161491V708.372671c0-21.465839 17.490683-38.161491 38.161491-38.161491h186.832298c21.465839 0 38.161491 17.490683 38.161491 38.161491v176.496894c0 21.465839-16.695652 38.161491-38.161491 38.161491zM276.273292 702.012422c-3.975155 0-6.360248 3.180124-6.360249 6.360249v176.496894c0 3.975155 3.180124 6.360248 6.360249 6.360249h186.832298c3.975155 0 6.360248-3.180124 6.360249-6.360249V708.372671c0-3.975155-3.180124-6.360248-6.360249-6.360249H276.273292zM369.291925 578.782609c-8.745342 0-15.900621-7.15528-15.900621-15.900621V461.118012c0-8.745342 7.15528-15.900621 15.900621-15.900621s15.900621 7.15528 15.900622 15.900621v101.763976c0 8.745342-7.15528 15.900621-15.900622 15.900621z"
+              fill="" />
+            <path
+              d="M418.583851 527.900621H321.590062c-8.745342 0-15.900621-7.15528-15.900621-15.900621s7.15528-15.900621 15.900621-15.900621h97.78882c8.745342 0 15.900621 7.15528 15.900621 15.900621s-7.950311 15.900621-16.695652 15.900621z"
+              fill="" />
+            <path
+              d="M402.68323 847.503106c-3.975155 0-7.950311-1.590062-11.130435-4.770187l-69.167702-69.167702c-6.360248-6.360248-6.360248-15.900621 0-22.260869 6.360248-6.360248 15.900621-6.360248 22.26087 0l69.167702 69.167702c6.360248 6.360248 6.360248 15.900621 0 22.260869-2.385093 3.180124-7.15528 4.770186-11.130435 4.770187z"
+              fill="" />
+            <path
+              d="M333.515528 847.503106c-3.975155 0-7.950311-1.590062-11.130435-4.770187-6.360248-6.360248-6.360248-15.900621 0-22.260869l69.167702-69.167702c6.360248-6.360248 15.900621-6.360248 22.26087 0 6.360248 6.360248 6.360248 15.900621 0 22.260869l-69.167702 69.167702c-3.180124 3.180124-7.15528 4.770186-11.130435 4.770187z"
+              fill="" />
+            <path
+              d="M709.565217 527.900621H600.645963c-8.745342 0-15.900621-7.15528-15.900621-15.900621s7.15528-15.900621 15.900621-15.900621h109.714285c8.745342 0 15.900621 7.15528 15.900622 15.900621s-7.950311 15.900621-16.695653 15.900621z"
+              fill="" />
+            <path
+              d="M709.565217 785.490683H600.645963c-8.745342 0-15.900621-7.15528-15.900621-15.900621s7.15528-15.900621 15.900621-15.900621h109.714285c8.745342 0 15.900621 7.15528 15.900622 15.900621s-7.950311 15.900621-16.695653 15.900621z"
+              fill="" />
+            <path
+              d="M709.565217 847.503106H600.645963c-8.745342 0-15.900621-7.15528-15.900621-15.900622s7.15528-15.900621 15.900621-15.900621h109.714285c8.745342 0 15.900621 7.15528 15.900622 15.900621s-7.950311 15.900621-16.695653 15.900622z"
+              fill="" />
+          </svg>
+          <p class="text-2xl font-extrabold text-dark-grey-900">Super Calculator</p>
+          <p class="text-base text-center leading-7 text-dark-grey-600">This is a caulator made in visual basics, used
+            to add,subtract ,multiply and divide numbers</p>
+        </div>
 
-          <div class="relative flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-[#89c5c7]">
-            <div class="absolute top-0 right-0 p-8">
-              <a class="text-lg font-bold text-purple-blue-500" target="_blank" href="https://github.com/rishab-alt/Picture-viewer">
-                <img src="./images/github.svg" alt="Super Calculator Github" class="transition-all w-12 h-12 ease-in hover:w-14 hover:h-14">
-              </a>
-            </div>
-            <img src="./images/project-svgrepo-com.svg" alt="Project Icon" class="w-32 h-32">
-            <p class="text-2xl font-extrabold text-dark-grey-900">Picture Viewer</p>
-            <p class="text-base text-center leading-7 text-dark-grey-600 line-clamp-3">This is a picture viewer made with visual basics , you can add an image which can be ony .JPG image files , allows you to stretch the image</p>
+        <div
+          class="relative flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-[#89c5c7]">
+          <div class="absolute top-0 right-0 p-8">
+            <a class="text-lg font-bold text-purple-blue-500" target="_blank"
+              href="https://github.com/rishab-alt/Picture-viewer">
+              <img src="./images/github.svg" alt="Super Calculator Github"
+                class="transition-all w-12 h-12 ease-in hover:w-14 hover:h-14">
+            </a>
           </div>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 511.999 511.999" xml:space="preserve" height="150px" width="150px">
+            <path style="fill:#E2E5E7;" d="M463.717,64.26H48.282c-8.828,0-15.978,7.15-15.978,15.978V431.76c0,8.828,7.15,15.978,15.978,15.978
+	h415.435c8.828,0,15.978-7.15,15.978-15.978V80.238C479.695,71.41,472.537,64.26,463.717,64.26z M447.739,415.782H64.26V96.216
+	h383.479V415.782z" />
+            <rect x="64.228" y="96.185" style="fill:#70B7E5;" width="383.479" height="319.566" />
+            <g>
+              <path style="fill:#bfebff;" d="M64.26,355.864l58.241-80.93c5.161-7.158,15.147-8.78,22.306-3.619
+		c1.606,1.158,2.98,2.604,4.058,4.258l91.156,140.209H64.26C64.26,415.782,64.26,355.864,64.26,355.864z" />
+              <path style="fill:#bfebff;" d="M447.739,415.782H255.999l98.266-147.32c4.825-7.39,14.724-9.475,22.114-4.65
+		c1.853,1.214,3.443,2.796,4.65,4.65l66.709,105.377V415.782z" />
+            </g>
+            <path style="fill:#bfebff;" d="M351.31,310.246l56.483,105.537h-15.978l-61.516-111.848l0,0c7.23-4.154,16.458-1.662,20.612,5.576
+	C351.046,309.75,351.182,309.99,351.31,310.246z" />
+            <path style="fill:#bfebff;" d="M136.162,415.782l113.845-206.359c4.274-7.718,13.997-10.522,21.714-6.248
+	c2.628,1.454,4.793,3.619,6.248,6.248l113.845,206.359H136.162z" />
+            <path style="fill:#bfebff;" d="M184.097,329.34c9.036-5.017,20.428-1.893,25.645,7.03l46.257,79.412h-15.978L184.097,329.34
+	L184.097,329.34z" />
+            <g>
+              <path style="fill:black;" d="M444.144,64.26l-5.752-27.243c-1.622-8.676-9.962-14.396-18.639-12.775
+		c-0.128,0.024-0.256,0.048-0.375,0.072L233.31,64.26H444.144z" />
+              <path style="fill:black;" d="M32.303,107.002l-19.254,4.074c-8.676,1.622-14.396,9.962-12.775,18.639
+		c0.024,0.128,0.048,0.256,0.072,0.376l31.957,149.397V107.002z" />
+              <path style="fill:black;" d="M67.855,447.739l5.752,27.243c1.622,8.676,9.962,14.396,18.639,12.775
+		c0.128-0.024,0.256-0.048,0.375-0.072l186.067-39.946H67.855z" />
+              <path style="fill:black;" d="M511.652,381.908l-31.957-149.397v172.486l19.254-4.074c8.676-1.622,14.396-9.962,12.775-18.639
+		C511.7,382.156,511.676,382.028,511.652,381.908z" />
+            </g>
+            <g>
+              <path style="fill:#FFFFFF;" d="M327.902,160.13c0-8.828-7.15-15.978-15.97-15.986c-6.263,0-11.952,3.651-14.548,9.355
+		c-5.872-3.06-13.11-0.783-16.17,5.089c-3.06,5.872-0.783,13.11,5.089,16.17c1.742,0.911,3.683,1.374,5.648,1.358h35.951
+		c4.41,0,7.989-3.579,7.989-7.989C335.891,163.717,332.312,160.13,327.902,160.13z" />
+              <path style="fill:#FFFFFF;" d="M407.793,184.097c0-8.828-7.15-15.978-15.97-15.986c-6.263,0-11.952,3.651-14.548,9.355
+		c-5.872-3.06-13.11-0.783-16.17,5.089c-3.06,5.872-0.783,13.11,5.089,16.17c1.742,0.911,3.683,1.374,5.648,1.358h35.951
+		c4.41,0,7.989-3.579,7.989-7.989C415.782,187.684,412.203,184.097,407.793,184.097z" />
+            </g>
+            <path style="fill:#F6B545;" d="M184.097,168.119h-7.989h-1.039c-0.823-2.812-2.037-5.505-3.595-7.989
+	c0.304-0.192,0.599-0.407,0.879-0.639l5.672-5.672c2.868-3.347,2.477-8.397-0.871-11.265c-2.988-2.565-7.406-2.565-10.394,0
+	l-5.672,5.672c-0.232,0.28-0.447,0.575-0.639,0.879c-2.588-1.558-5.385-2.74-8.309-3.515c0.048-0.479,0.048-0.959,0-1.438v-7.989
+	c0-4.41-3.579-7.989-7.989-7.989s-7.989,3.579-7.989,7.989v7.989c-0.024,0.344-0.024,0.695,0,1.039
+	c-3.012,0.767-5.896,1.981-8.548,3.595c-0.192-0.336-0.399-0.655-0.639-0.959l-5.672-5.672c-3.347-2.868-8.397-2.477-11.265,0.871
+	c-2.565,2.988-2.565,7.406,0,10.394l5.672,5.672c0.304,0.24,0.623,0.447,0.959,0.639c-1.614,2.652-2.828,5.536-3.595,8.548
+	l-0.879-0.16h-7.989c-4.41,0-7.989,3.579-7.989,7.989c0,4.41,3.579,7.989,7.989,7.989h7.989h1.039
+	c0.767,3.012,1.981,5.896,3.595,8.548c-0.336,0.192-0.655,0.399-0.959,0.639l-5.672,5.672c-3.347,2.868-3.739,7.917-0.871,11.265
+	c2.868,3.347,7.917,3.739,11.265,0.871c0.312-0.264,0.607-0.559,0.871-0.871l5.672-5.672c0.368-0.208,0.711-0.447,1.039-0.719
+	c2.652,1.614,5.536,2.828,8.548,3.595c-0.2,0.2-0.383,0.415-0.559,0.639v7.989c0,4.41,3.579,7.989,7.989,7.989
+	s7.989-3.579,7.989-7.989v-7.989c0.024-0.344,0.024-0.695,0-1.039c2.796-0.695,5.489-1.766,7.989-3.196
+	c0.192,0.336,0.399,0.655,0.639,0.959l5.672,5.672c3.347,2.868,8.397,2.477,11.265-0.871c2.565-2.988,2.565-7.406,0-10.394
+	l-5.672-5.672c-0.304-0.24-0.623-0.447-0.959-0.639c1.774-2.708,3.124-5.672,3.995-8.788h1.039h7.989
+	c4.41,0,7.989-3.579,7.989-7.989C192.086,171.698,188.507,168.119,184.097,168.119z" />
+            <polygon style="fill:#7B9CB1;" points="201.833,464.116 276.931,448.138 67.935,448.138 71.37,464.116 " />
+            <g>
+              <path style="fill:#CAD1D8;" d="M463.717,96.216v327.555c0,4.41-3.579,7.989-7.989,7.989H64.26c-8.828,0-15.978,7.15-15.978,15.978
+		h415.435c8.828,0,15.978-7.15,15.978-15.978V80.238l0,0C470.867,80.238,463.717,87.388,463.717,96.216z" />
+              <path style="fill:#CAD1D8;" d="M64.26,415.782V96.216h383.479c0-8.828-7.15-15.978-15.978-15.978H56.271
+		c-4.41,0-7.989,3.579-7.989,7.989v311.576C48.282,408.624,55.432,415.782,64.26,415.782L64.26,415.782z" />
+            </g>
+          </svg>
+          <p class="text-2xl font-extrabold text-dark-grey-900">Picture Viewer</p>
+          <p class="text-base text-center leading-7 text-dark-grey-600 line-clamp-3">This is a picture viewer made with
+            visual basics , you can add an image which can be ony .JPG image files , allows you to stretch the image</p>
+        </div>
 
-          <div class="relative flex flex-col justify-between items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-[#89c5c7]">
-            <div class="absolute top-0 right-0 p-8">
-              <a class="text-lg font-bold text-purple-blue-500" target="_blank" href="https://github.com/rishab-alt/Text-Editor">
-                <img src="./images/github.svg" alt="Picture Viewer Gitgub" class="transition-all w-12 h-12 ease-in hover:w-14 hover:h-14">
-              </a>
-            </div>
-            <img src="./images/project-svgrepo-com.svg" alt="Project Icon" class="w-32 h-32">
-            <p class="text-2xl font-extrabold text-dark-grey-900">Text Editor</p>
-            <p class="text-base text-center leading-7 text-dark-grey-600">This is a text editor made with visual basics , allows you to do a range of things, from opening files to printing to saving files</p>
+        <div
+          class="relative flex flex-col justify-between items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-[#89c5c7]">
+          <div class="absolute top-0 right-0 p-8">
+            <a class="text-lg font-bold text-purple-blue-500" target="_blank"
+              href="https://github.com/rishab-alt/Text-Editor">
+              <img src="./images/github.svg" alt="Picture Viewer Gitgub"
+                class="transition-all w-12 h-12 ease-in hover:w-14 hover:h-14">
+            </a>
           </div>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 512 512" xml:space="preserve" height="150px" width="150px">
+            <g>
+              <rect x="213.773" y="192.66" style="fill:#AFB6BB;" width="290.309" height="163.629" />
+              <rect x="7.918" y="192.66" style="fill:#AFB6BB;" width="142.515" height="163.629" />
+            </g>
+            <polygon style="fill:#bfebff;"
+              points="329.897,87.093 329.897,150.433 213.773,150.433 213.773,192.66 213.773,356.289 
+         213.773,424.907 150.433,424.907 150.433,356.289 150.433,192.66 150.433,150.433 34.309,150.433 34.309,87.093 " />
+            <polygon style="fill:#bfebff;" points="34.309,87.093 34.309,150.433 150.433,150.433 150.433,192.66 150.433,356.289 
+         150.433,424.907 182.103,424.907 182.103,87.093 " />
+            <g>
+              <rect x="213.773" y="266.557" style="fill:#9CA2A7;" width="290.309" height="89.732" />
+              <rect x="7.918" y="266.557" style="fill:#9CA2A7;" width="142.515" height="89.732" />
+            </g>
+            <path d="M512,184.742H221.691v-26.392h116.124V79.175H26.392v79.175h116.124v26.392H0v179.464h142.515v68.619h79.175v-68.619H512
+         V184.742z M15.835,348.371V200.577h126.68v147.794H15.835z M205.856,416.99h-47.505V142.515H42.227V95.01h279.753v47.505H205.856
+         V416.99z M496.165,348.371H221.691V200.577h274.474V348.371z" />
+            <g>
+              <polygon style="fill:#FFFFFF;"
+                points="472.412,232.247 472.412,216.412 409.072,216.412 409.072,232.247 432.825,232.247 
+           432.825,316.701 409.072,316.701 409.072,332.536 472.412,332.536 472.412,316.701 448.66,316.701 448.66,232.247 	" />
+              <polygon style="fill:#FFFFFF;" points="52.784,298.227 36.948,298.227 36.948,221.691 76.536,221.691 76.536,237.526 
+           52.784,237.526 	" />
+              <rect x="36.948" y="308.784" style="fill:#FFFFFF;" width="15.835" height="21.113" />
+              <rect x="55.423" y="110.845" style="fill:#FFFFFF;" width="153.072" height="15.835" />
+              <rect x="224.33" y="110.845" style="fill:#FFFFFF;" width="26.392" height="15.835" />
+            </g>
+          </svg>
+          <p class="text-2xl font-extrabold text-dark-grey-900">Text Editor</p>
+          <p class="text-base text-center leading-7 text-dark-grey-600">This is a text editor made with visual basics ,
+            allows you to do a range of things, from opening files to printing to saving files</p>
+        </div>
 
-          <div class="relative flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-[#89c5c7]">
-            <div class="absolute top-0 right-0 p-8">
-              <a class="text-lg font-bold text-purple-blue-500" target="_blank" href="./College_project_files/Spreadsheet project_current_final 2.xlsm">
-                <img src="./images/download.svg" alt="Excel College Assignment Download" class="transition-all w-10 h-10 ease-in hover:w-12 hover:h-12">
-              </a>
-            </div>
-            <img src="./images/project-svgrepo-com.svg" alt="Project Icon" class="w-32 h-32">
-            <p class="text-2xl font-extrabold text-dark-grey-900">Excel College Assignment</p>
-            <p class="text-base text-center leading-7 text-dark-grey-600">This spreadsheet shows the work that I did for college and what skills I have</p>
+        <div
+          class="relative flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main border-t-8 border-t-[#89c5c7]">
+          <div class="absolute top-0 right-0 p-8">
+            <a class="text-lg font-bold text-purple-blue-500" target="_blank"
+              href="./College_project_files/Spreadsheet project_current_final 2.xlsm">
+              <img src="./images/download.svg" alt="Excel College Assignment Download"
+                class="transition-all w-10 h-10 ease-in hover:w-12 hover:h-12">
+            </a>
           </div>
+<svg width="150px" height="150px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="a" x1="4.494" y1="-2092.086" x2="13.832" y2="-2075.914" gradientTransform="translate(0 2100)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#18884f"/><stop offset="0.5" stop-color="#117e43"/><stop offset="1" stop-color="#0b6631"/></linearGradient></defs><title>file_type_excel</title><path d="M19.581,15.35,8.512,13.4V27.809A1.192,1.192,0,0,0,9.705,29h19.1A1.192,1.192,0,0,0,30,27.809h0V22.5Z" style="fill:#185c37"/><path d="M19.581,3H9.705A1.192,1.192,0,0,0,8.512,4.191h0V9.5L19.581,16l5.861,1.95L30,16V9.5Z" style="fill:#21a366"/><path d="M8.512,9.5H19.581V16H8.512Z" style="fill:#107c41"/><path d="M16.434,8.2H8.512V24.45h7.922a1.2,1.2,0,0,0,1.194-1.191V9.391A1.2,1.2,0,0,0,16.434,8.2Z" style="opacity:0.10000000149011612;isolation:isolate"/><path d="M15.783,8.85H8.512V25.1h7.271a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.783,8.85Z" style="opacity:0.20000000298023224;isolation:isolate"/><path d="M15.783,8.85H8.512V23.8h7.271a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.783,8.85Z" style="opacity:0.20000000298023224;isolation:isolate"/><path d="M15.132,8.85H8.512V23.8h6.62a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.132,8.85Z" style="opacity:0.20000000298023224;isolation:isolate"/><path d="M3.194,8.85H15.132a1.193,1.193,0,0,1,1.194,1.191V21.959a1.193,1.193,0,0,1-1.194,1.191H3.194A1.192,1.192,0,0,1,2,21.959V10.041A1.192,1.192,0,0,1,3.194,8.85Z" style="fill:url(#a)"/><path d="M5.7,19.873l2.511-3.884-2.3-3.862H7.758L9.013,14.6c.116.234.2.408.238.524h.017c.082-.188.169-.369.26-.546l1.342-2.447h1.7l-2.359,3.84,2.419,3.905H10.821l-1.45-2.711A2.355,2.355,0,0,1,9.2,16.8H9.176a1.688,1.688,0,0,1-.168.351L7.515,19.873Z" style="fill:#fff"/><path d="M28.806,3H19.581V9.5H30V4.191A1.192,1.192,0,0,0,28.806,3Z" style="fill:#33c481"/><path d="M19.581,16H30v6.5H19.581Z" style="fill:#107c41"/></svg>          <p class="text-2xl font-extrabold text-dark-grey-900">Excel College Assignment</p>
+          <p class="text-base text-center leading-7 text-dark-grey-600">This spreadsheet shows the work that I did for
+            college and what skills I have</p>
+        </div>
 
-        </section>
       </section>
     </section>
-    <button id="darkModeToggle" class="bg-gray-800 text-white p-2 rounded">Toggle Dark Mode</button>
+  </section>
+  <button id="darkModeToggle" class="bg-gray-800 text-white p-2 rounded">Toggle Dark Mode</button>
 
-    <script
-      src="./js/mobileMenu.js"
-      async
-    ></script>
-  </body>
+  <script src="./js/mobileMenu.js" async></script>
+</body>
+
 </html>
