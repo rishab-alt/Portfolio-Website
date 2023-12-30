@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Blog Title</title>
+    <link rel="icon" href="./images/Favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="m-0 p-0 h-full bg-[#01a5d9]">
+    <nav id="nav" class="bg-white shadow-lg bg-amber-400">
+        <div class="mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex align-center">
+                    <a href="" class="py-4 px-2 font-semibold">
+                        Rishab
+                    </a>
+                </div>
+                <div class="flex space-x-7">
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="./index.html"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
+                            Home
+                        </a>
+                        <a href="./about.html"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
+                            About
+                        </a>
+                        <a href="./my-work.html"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
+                            My Work
+                        </a>
+                        <a href="./Blog.html"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
+                            Blog
+                        </a>
+                        <a href="./contact.html"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500 hover:text-[#89c5c7]" x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active">
+                    <a href="./index.html"
+                        class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./about.html"
+                        class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="./my-work.html"
+                        class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+                        My Work
+                    </a>
+                </li>
+                <li>
+                    <a href="./Blog.html"
+                        class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html"
+                        class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mx-auto mt-8 flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
+        <input type="text" id="searchInput" placeholder="Search posts"
+            class="p-3 border border-gray-300 rounded w-full md:w-64 focus:outline-none focus:ring focus:border-blue-500 transition duration-300">
+        <button onclick="searchPosts()"
+            class="bg-[#89c5c7] text-white px-6 py-3 rounded hover:bg-gray-600 transition duration-300">Search</button>
+        <button onclick="resetSearch()"
+            class="bg-[#89c5c7] text-white px-6 py-3 rounded hover:bg-gray-600 transition duration-300">See All</button>
+    </div>
+    <div class="container mx-auto mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Blog Posts Loop -->
+            <!-- Example Post Card -->
+            <div
+                class="bg-white p-6 rounded-lg shadow-md blog-post relative flex flex-col items-center gap-3 px-8 py-10  rounded-3xl shadow-main border-t-8 border-t-[#89c5c7]">
+                <img src="./images/github.svg" alt="Post Image" class="mb-4 rounded-lg">
+                <h2 class="text-xl font-bold mb-2 post-title">Github</h2>
+                <p class="text-gray-600 post-content">This Blog outlines the reasons why you should use Github as a
+                    place
+                    to store and view your projects and how it will help you increase developer profile
+                </p>
+                <a href="#" class="text-blue-500 mt-2 inline-block">Still in development</a>
+            </div>
+            <!-- Repeat the above card for each blog post -->
+            <!-- ... -->
+
+        </div>
+    </div>
+
+
+    <script>
+        <!-- JavaScript -->
+        function searchPosts() {
+            var searchInput = document.getElementById('searchInput').value.toLowerCase();
+            var posts = document.querySelectorAll('.blog-post');
+
+            posts.forEach(function (post) {
+                var title = post.querySelector('.post-title').innerText.toLowerCase();
+                var content = post.querySelector('.post-content').innerText.toLowerCase();
+
+                // Include card content in the search
+                if (title.includes(searchInput) || content.includes(searchInput)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+
+        function resetSearch() {
+            var posts = document.querySelectorAll('.blog-post');
+            posts.forEach(function (post) {
+                post.style.display = 'block';
+            });
+
+            document.getElementById('searchInput').value = '';
+        }
+    </script>
+
+    </script>
+    <script src="./js/mobileMenu.js" async></script>
+
+</body>
+
+</html>

@@ -9,77 +9,120 @@
   <title>My Work</title>
 </head>
 
-<body class="m-0 p-0 h-full bg-[#01a5d9]" id="body_page">
-  <nav id="nav" class="bg-white shadow-lg">
-    <div class="mx-auto px-4">
-      <div class="flex justify-between">
-        <div class="flex align-center">
-          <a href="" class="py-4 px-2 font-semibold">
-            Rishab
-          </a>
-        </div>
-        <div class="flex space-x-7">
-          <div class="hidden md:flex items-center space-x-1">
-            <a href="./index.html"
-              class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
-              Home
-            </a>
-            <a href="./about.html"
-              class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
-              About
-            </a>
-            <a href="./my-work.html"
-              class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
-              My Work
-            </a>
-            <a href="./contact.html"
-              class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300">
-              Contact Us
-            </a>
-          </div>
-        </div>
-        <!-- Mobile menu button -->
-        <div class="md:hidden flex items-center">
-          <button class="outline-none mobile-menu-button">
-            <svg class="w-6 h-6 text-gray-500 hover:text-[#89c5c7]" x-show="!showMenu" fill="none"
-              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
+<body class="m-0 p-0 h-full bg-[#01a5d9] flex flex-col min-h-screen">
+  <nav
+  id="nav"
+  class="bg-white shadow-lg bg-amber-400"
+>
+  <div class="mx-auto px-4">
+    <div class="flex justify-between">
+      <div class="flex align-center">
+        <a
+          href=""
+          class="py-4 px-2 font-semibold"
+        >
+          Rishab
+        </a>
       </div>
-    </div>
-    <!-- mobile menu -->
-    <div class="hidden mobile-menu">
-      <ul class="">
-        <li class="active">
-          <a href="./index.html"
-            class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+      <div class="flex space-x-7">
+        <div class="hidden md:flex items-center space-x-1">
+          <a
+            href="./index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300"
+          >
             Home
           </a>
-        </li>
-        <li>
-          <a href="./about.html"
-            class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+          <a
+            href="./about.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300"
+          >
             About
           </a>
-        </li>
-        <li>
-          <a href="./my-work.html"
-            class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+          <a
+            href="./my-work.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300"
+          >
             My Work
           </a>
-        </li>
-        <li>
-          <a href="./contact.html"
-            class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300">
+          <a
+          href="./Blog.html"
+          class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300"
+        >
+        Blog
+        </a>
+          <a
+            href="./contact.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-[#89c5c7] transition duration-300"
+          >
             Contact Me
           </a>
-        </li>
-
-      </ul>
+        </div>
+      </div>
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg
+            class="w-6 h-6 text-gray-500 hover:text-[#89c5c7]"
+            x-show="!showMenu"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-  </nav>
+  </div>
+  <!-- mobile menu -->
+  <div class="hidden mobile-menu">
+    <ul class="">
+      <li class="active">
+        <a
+          href="./index.html"
+          class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="./about.html"
+          class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300"
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          href="./my-work.html"
+          class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300"
+        >
+          My Work
+        </a>
+      </li>
+      <li>
+        <a
+          href="./Blog.html"
+          class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300"
+        >
+          Blog
+        </a>
+      </li>
+      <li>
+        <a
+          href="./contact.html"
+          class="block text-sm px-2 py-4 hover:bg-[#89c5c7] hover:text-white transition duration-300"
+        >
+          Contact Me
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
   <section class="container m-auto">
     <section class="flex flex-col justify-center items-center p-6 h-full gap-10">
@@ -97,7 +140,7 @@
                 class="transition-all w-12 h-12 ease-in hover:w-14 hover:h-14">
             </a>
           </div>
-          <svg width="150px" height="150px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+          <svg width="100px" height="100px" viewBox="0 0 1024 1024" class="icon" version="1.1"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M182.459627 15.900621h658.285715c12.720497 0 22.26087 10.335404 22.260869 22.26087v946.881987c0 12.720497-10.335404 22.26087-22.260869 22.26087H182.459627c-12.720497 0-22.26087-10.335404-22.260869-22.26087V38.161491C160.198758 26.236025 170.534161 15.900621 182.459627 15.900621z"
@@ -167,7 +210,7 @@
             </a>
           </div>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 511.999 511.999" xml:space="preserve" height="150px" width="150px">
+            viewBox="0 0 511.999 511.999" xml:space="preserve" height="100px" width="100px">
             <path style="fill:#E2E5E7;" d="M463.717,64.26H48.282c-8.828,0-15.978,7.15-15.978,15.978V431.76c0,8.828,7.15,15.978,15.978,15.978
 	h415.435c8.828,0,15.978-7.15,15.978-15.978V80.238C479.695,71.41,472.537,64.26,463.717,64.26z M447.739,415.782H64.26V96.216
 	h383.479V415.782z" />
@@ -239,7 +282,7 @@
             </a>
           </div>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 512 512" xml:space="preserve" height="150px" width="150px">
+            viewBox="0 0 512 512" xml:space="preserve" height="100px" width="100px">
             <g>
               <rect x="213.773" y="192.66" style="fill:#AFB6BB;" width="290.309" height="163.629" />
               <rect x="7.918" y="192.66" style="fill:#AFB6BB;" width="142.515" height="163.629" />
@@ -289,8 +332,6 @@
       </section>
     </section>
   </section>
-  <button id="darkModeToggle" class="bg-gray-800 text-white p-2 rounded">Toggle Dark Mode</button>
-
   <script src="./js/mobileMenu.js" async></script>
 </body>
 
